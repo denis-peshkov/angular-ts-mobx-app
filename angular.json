@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "pp-cli": {
+    "angular-ts-mobx-app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/pp-cli",
+            "outputPath": "dist/angular-ts-mobx-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "pp-cli:build:production"
+              "buildTarget": "angular-ts-mobx-app:build:production"
             },
             "development": {
-              "buildTarget": "pp-cli:build:development"
+              "buildTarget": "angular-ts-mobx-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "pp-cli:build"
+            "buildTarget": "angular-ts-mobx-app:build"
           }
         },
         "test": {
