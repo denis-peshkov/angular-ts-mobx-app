@@ -8,8 +8,19 @@
 
 # Node
 /node_modules
-npm-debug.log
-yarn-error.log
+
+# css
+*.css
+
+# yarn
+yarn.lock
+yarn-debug.log*
+yarn-error.log*
+
+# npm
+package-lock.json
+npm-debug.log*
+
 
 # IDEs and editors
 .idea/
